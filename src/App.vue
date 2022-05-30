@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <holding-list></holding-list>
   </div>
 </template>
 
 <script>
+import HoldingList from './components/HoldingList'
+
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    HoldingList
+  }
 }
 </script>
 
